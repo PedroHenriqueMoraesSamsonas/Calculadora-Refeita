@@ -1,0 +1,67 @@
+<html>
+
+
+<head>
+
+    <link rel="stylesheet" href="./CSS/estilo.css">
+
+
+    <meta charset="utf-8" />
+    <style>
+
+    </style>
+</head>
+
+<body style="background: linear-gradient(to right, rgba(2, 38, 79, 0.738), rgb(0, 124, 95))">
+
+
+
+    <div class="text">
+        <h1>Matemaquina</h1>
+    </div>
+    <div class="container">
+        <table class="tabela">
+            <tr>
+                <td colspan="5">
+                    <p type="text" class="estilo" value="" id="visor"
+                        style="background-color: rgb(48, 136, 48); color:white; border-radius:24%"></p>
+                </td>
+            </tr>
+            <tr>
+                <td><input onclick="inverso()" type="button" class="estilo" value="1/x" id="d7"></td>
+                <td> <input onclick="eleva()" type="button" class="estilo" value="x²" id="d8"></td>
+                <td> <input onclick="raiz()" type="button" class="estilo" value="√" id="d9" name="raiz"></td>
+                <td> <input onclick="botao('/')" type="button" class="estilo" value="/" id="dx"></td>
+            </tr>
+            <tr style="margin-left: 5px;">
+                <td><input onclick="botao('7')" type="button" class="estilo" value="7" id="d7"></td>
+                <td> <input onclick="botao('8')" type="button" class="estilo" value="8" id="d8"></td>
+                <td> <input onclick="botao('9')" type="button" class="estilo" value="9" id="d9"></td>
+                <td> <input onclick="botao('*')" type="button" class="estilo" value="X" id="dx"></td>
+            </tr>
+
+            <tr>
+                <td> <input onclick="botao('4')" type="button" class="estilo" value="4" id="d4"></td>
+                <td> <input onclick="botao('5')" type="button" class="estilo" value="5" id="d5"></td>
+                <td> <input onclick="botao('6')" type="button" class="estilo" value="6" id="d6"></td>
+                <td> <input onclick="botao('-')" type="button" class="estilo" value="-" id="dmenos"></td>
+            </tr>
+            <tr>
+                <td> <input onclick="botao('1')" type="button" class="estilo" value="1" id="d1"></td>
+                <td> <input onclick="botao('2')" type="button" class="estilo" value="2" id="d2"></td>
+                <td> <input onclick="botao('3')" type="button" class="estilo" value="3" id="d3"></td>
+                <td> <input onclick="botao('+')" type="button" class="estilo" value="+" id="dmais"></td>
+            </tr>
+            <tr>
+                <td><input onclick="botao('0')" type="button" class="estilo" value="0" id="d0"> </td>
+                <td><input onclick="botao('.')" type="button" class="estilo" value="," id="dbarra"></td>
+                <td><input onclick="reseta()" type="button" class="estilo" value="⌫" id="dapag"></td>
+                <td rowspan="2"><input onclick="calculo()" type="button" class="estilo" value="=" style="height: 70px;"
+                        id="digual"></td>
+            </tr>
+        </table>
+    </div>
+    <script src="js/funcao.js"></script>
+</body>
+
+</html>
